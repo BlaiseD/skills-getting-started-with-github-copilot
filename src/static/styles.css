@@ -91,16 +91,39 @@ section h3 {
 }
 
 .participants ul {
-  list-style: disc;
+  list-style: none; /* hide default bullets */
   margin: 0;
-  margin-left: 20px;
+  margin-left: 0;
   padding: 0;
   color: #444;
 }
 
 .participants li {
-  padding: 4px 0;
+  padding: 6px 8px;
   font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.participant-email {
+  word-break: break-all;
+  margin-right: 12px;
+}
+
+.delete-participant {
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 18px;
+  line-height: 1;
+  padding: 4px 8px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.delete-participant:hover {
+  background: rgba(198, 40, 40, 0.08);
 }
 
 /* Styling for the placeholder when no participants */
